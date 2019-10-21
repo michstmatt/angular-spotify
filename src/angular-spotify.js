@@ -109,6 +109,11 @@
             return auth;
           },
 
+          getCurrentlyPlaying: function () {
+
+            return this.api('/me/player/currently-playing', 'GET', null, null, this._auth());
+          },
+
           /**
             ====================== Albums =====================
            */
